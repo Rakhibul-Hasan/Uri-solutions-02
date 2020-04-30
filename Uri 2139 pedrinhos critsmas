@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int m,d,x;
+	while(scanf("%d%d",&m,&d)!=EOF){
+		if(m==12 && d==25) printf("E natal!\n");
+		else if(m==12 && d==24) printf("E vespera de natal!\n");
+		else if(m== 12 && d>25) printf("Ja passou!\n");
+		else{
+			if(m==12) printf("Faltam %d dias para o natal!\n",25-d);
+			else if(m==11) printf("Faltam %d dias para o natal!\n",55-d);
+			else if(m==10) printf("Faltam %d dias para o natal!\n",86-d);
+			else if(m==9) printf("Faltam %d dias para o natal!\n",116-d);
+			else if(m==8) printf("Faltam %d dias para o natal!\n",147-d);
+			else if(m==7) printf("Faltam %d dias para o natal!\n",178-d);
+			else if(m==6) printf("Faltam %d dias para o natal!\n",208-d);
+			else if(m==5) printf("Faltam %d dias para o natal!\n",239-d);
+			else if(m==4) printf("Faltam %d dias para o natal!\n",269-d);
+			else if(m==3) printf("Faltam %d dias para o natal!\n",300-d);
+			else if(m==2) printf("Faltam %d dias para o natal!\n",329-d);
+			else if(m==1) printf("Faltam %d dias para o natal!\n",360-d);
+		}
+		}
+		return 0;
+}
